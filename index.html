@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+
+    <script src='index.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" media="screen"/>
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+
+    <title>Page Title</title>
+</head>
+<body>
+    
+    <div class="wrapper clearfix">
+
+        <div class="player-1-panel active">
+            <div class="player-name">PLAYER 1</div>
+            <div class="player-score" id="player1-global-score">0</div>
+            <div class="player-current-box">
+                <div class="player-current-text">CURRENT</div>
+                <div class="player-current-score" id="player1-current-score">0</div>
+            </div>
+        </div>
+        <div class="player-2-panel">
+            <div class="player-name">PLAYER 2</div>
+            <div class="player-score" id="player2-global-score">0</div>
+            <div class="player-current-box">
+                <div class="player-current-text">CURRENT</div>
+                <div class="player-current-score" id="player2-current-score">0</div>
+            </div>
+        </div>
+
+        <button class="button btn-new" onclick = newGame()>
+            <i class="ion-ios-plus-outline"></i>NEW GAME
+        </button>
+        <button class="button btn-roll" onclick = run()>
+            <i class="ion-ios-loop"></i>ROLL DICE
+        </button>
+        <button class="button btn-hold" onclick = hold()>
+            <i class="ion-ios-download-outline"></i>HOLD
+        </button>
+
+        <input class="button final-score" placeholder="FINAL SCORE"></input>
+
+        <img src="" class="dice display-none" id="dice-1">
+        <img src="" class="dice display-none" id="dice-2">
+
+    </div>
+</body>
+</html>
